@@ -20,8 +20,8 @@ VALIDATE(){
     fi
 }
 
-yum update -y &>>LOG
+yum update -y &>>$LOG
 VALIDATE $? " Updated packages"
 
-yum install docker -y &>>LOG
+yum install docker -y &>>$LOG
 VALIDATE $? "Docker insatlled"
