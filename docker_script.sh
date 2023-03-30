@@ -22,3 +22,6 @@ VALIDATE(){
 
 yum update -y &>>LOG
 VALIDATE $? " Updated packages"
+
+yum install docker -y &>>LOG
+VALIDATE $? "Docker insatlled"
