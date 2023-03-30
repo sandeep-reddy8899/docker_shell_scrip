@@ -21,4 +21,4 @@ validate(){
 }
 
 yum-update -y &>>LOG
-validate $?
+validate $? " Updated packages"
