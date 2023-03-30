@@ -25,3 +25,6 @@ VALIDATE $? " Updated packages"
 
 yum install docker -y &>>$LOG
 VALIDATE $? "Docker insatlled"
+
+service docker start &>>$LOG
+VALIDATE $? "Stated docker"
